@@ -307,7 +307,7 @@ Dockerfile实现如下,可以按需修改
 
 ```dockerfile
 FROM python:3.8
-COPY . /code
+COPY AboutPipenv /code
 WORKDIR /code
 RUN sh deploy.sh
 CMD ["pipenv", "run", "python3", "testfile.py"]
